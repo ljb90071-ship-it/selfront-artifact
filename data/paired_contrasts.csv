@@ -1,0 +1,5 @@
+collection,configuration,comparison,repetitions,mean_difference_ms,se_run_mean_ms
+Articles,target_0.960,BPF_minus_SelFront,5,.313125,.018
+Articles,target_0.970,BPF_minus_SelFront,5,.430,.023
+Media,target_0.955,BPF_minus_SelFront,5,-.100,.065
+Articles,shared_beta4,Fixed_probes_minus_SelFront,5,.009125,.011

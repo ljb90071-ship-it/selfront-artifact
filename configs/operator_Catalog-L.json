@@ -1,0 +1,14 @@
+{
+  "w": 4,
+  "s": 8,
+  "h": 4,
+  "epsilon": 0.1,
+  "tau": 1e-06,
+  "a": 1,
+  "b": 4.0,
+  "c": 2.0,
+  "initial_block": 8,
+  "block": 64,
+  "min_eligible": 32,
+  "overlap": 0.35
+}

@@ -1,0 +1,5 @@
+collection,bpf_graph_ms,selfront_graph_ms,bpf_all_ms,selfront_all_ms,bpf_graph_recall,selfront_graph_recall
+Catalog,1.600,1.280,1.8400,1.7408,.9630,.9620
+Articles,3.244,2.647,3.7655,3.5745,.9638,.9623
+Media,7.200,6.500,9.3000,9.0970,.9580,.9570
+Catalog-L,6.000,4.700,7.8000,7.3580,.9610,.9600

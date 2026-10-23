@@ -1,0 +1,14 @@
+variant,latency_ms,expansions,graph_distances,recall
+BPF,3.244,1700,20500,.9638
+Counter only,3.282,1700,20500,.9638
+Uniform-window,3.210,1660,20280,.9608
+Eligible-first,2.910,1505,19020,.9619
+Shuffled-score,3.260,1668,20300,.9612
+Eligibility/cost,3.190,1650,20200,.9610
+Freshness/cost,2.940,1540,19300,.9580
+Yield only,2.810,1320,19800,.9605
+Exact yield/cost,2.880,1340,17500,.9630
+Fixed probes,2.656,1401,17960,.9621
+SelFront,2.647,1390,17900,.9623
+No gate,2.755,1398,18040,.9620
+No native steps,2.420,1220,17000,.9330

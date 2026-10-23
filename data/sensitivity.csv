@@ -1,0 +1,11 @@
+parameter,value,collection,cohort,latency_ms
+samples,4,Articles,graph,2.790
+samples,8,Articles,graph,2.647
+samples,16,Articles,graph,2.730
+window,2,Articles,graph,2.840
+window,4,Articles,graph,2.647
+window,8,Articles,graph,2.860
+warm_BPF,1,Catalog-L,graph,6.000
+warm_SelFront,1,Catalog-L,graph,4.700
+cold_BPF,1,Catalog-L,graph,7.100
+cold_SelFront,1,Catalog-L,graph,7.550

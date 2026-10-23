@@ -1,0 +1,42 @@
+[
+  {
+    "collection": "Articles",
+    "configuration": "target_0.960",
+    "comparison": "BPF_minus_SelFront",
+    "mean_difference_ms": 0.313125,
+    "interval95_ms": [
+      0.2631489881064396,
+      0.36310101189356037
+    ]
+  },
+  {
+    "collection": "Articles",
+    "configuration": "target_0.970",
+    "comparison": "BPF_minus_SelFront",
+    "mean_difference_ms": 0.43,
+    "interval95_ms": [
+      0.3661417625804506,
+      0.4938582374195494
+    ]
+  },
+  {
+    "collection": "Media",
+    "configuration": "target_0.955",
+    "comparison": "BPF_minus_SelFront",
+    "mean_difference_ms": -0.1,
+    "interval95_ms": [
+      -0.2804689318378569,
+      0.08046893183785692
+    ]
+  },
+  {
+    "collection": "Articles",
+    "configuration": "shared_beta4",
+    "comparison": "Fixed_probes_minus_SelFront",
+    "mean_difference_ms": 0.009125,
+    "interval95_ms": [
+      -0.021415896157175783,
+      0.039665896157175785
+    ]
+  }
+]

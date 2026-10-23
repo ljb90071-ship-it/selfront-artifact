@@ -1,0 +1,65 @@
+[
+  {
+    "collection": "Articles",
+    "method": "BPF",
+    "target": 0.96,
+    "beta": 3.5,
+    "tuning_ms": 2.93
+  },
+  {
+    "collection": "Articles",
+    "method": "Eligible-first",
+    "target": 0.96,
+    "beta": 4.0,
+    "tuning_ms": 2.89
+  },
+  {
+    "collection": "Articles",
+    "method": "SelFront",
+    "target": 0.96,
+    "beta": 4.0,
+    "tuning_ms": 2.62
+  },
+  {
+    "collection": "Articles",
+    "method": "BPF",
+    "target": 0.97,
+    "beta": 5.0,
+    "tuning_ms": 3.59
+  },
+  {
+    "collection": "Articles",
+    "method": "Eligible-first",
+    "target": 0.97,
+    "beta": 6.0,
+    "tuning_ms": 3.49
+  },
+  {
+    "collection": "Articles",
+    "method": "SelFront",
+    "target": 0.97,
+    "beta": 6.0,
+    "tuning_ms": 3.16
+  },
+  {
+    "collection": "Media",
+    "method": "BPF",
+    "target": 0.955,
+    "beta": 3.5,
+    "tuning_ms": 6.37
+  },
+  {
+    "collection": "Media",
+    "method": "Eligible-first",
+    "target": 0.955,
+    "beta": 3.5,
+    "tuning_ms": 6.28
+  },
+  {
+    "collection": "Media",
+    "method": "SelFront",
+    "target": 0.955,
+    "beta": 4.0,
+    "tuning_ms": 6.46
+  }
+]

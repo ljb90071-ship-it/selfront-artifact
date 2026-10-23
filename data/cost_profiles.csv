@@ -1,0 +1,5 @@
+collection,dimension,a_normalized,b_over_a,c_over_a
+Catalog,128,1,4,2
+Articles,384,1,10,2
+Media,768,1,18,2
+Catalog-L,128,1,4,2

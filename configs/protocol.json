@@ -1,0 +1,66 @@
+{
+  "k": 10,
+  "distance": "squared Euclidean",
+  "normalization": "unit L2",
+  "vector_format": "float32",
+  "hnsw": {
+    "M": 16,
+    "ef_construction": 200,
+    "max_bottom_degree": 32
+  },
+  "routing": {
+    "sigma_gate": 0.01,
+    "pilot_width": 128,
+    "pilot_min_eligible": 8,
+    "min_ef": 256,
+    "max_ef": 16384,
+    "beta": 4
+  },
+  "common_beta_grid": [
+    2,
+    4,
+    8,
+    16
+  ],
+  "independent_beta_grid": [
+    2,
+    2.5,
+    3,
+    3.5,
+    4,
+    5,
+    6,
+    8
+  ],
+  "tuning_requests": 2000,
+  "test_requests": 10000,
+  "requests_per_bin": 2500,
+  "selectivity_bins_percent": [
+    [
+      0.01,
+      0.1
+    ],
+    [
+      0.1,
+      1
+    ],
+    [
+      1,
+      10
+    ],
+    [
+      10,
+      50
+    ]
+  ],
+  "independent_targets": {
+    "Articles": [
+      0.96,
+      0.97
+    ],
+    "Media": [
+      0.955
+    ]
+  },
+  "graph_bin_recall_floor": 0.95
+}

@@ -1,0 +1,5 @@
+collection,records,dimension,attribute_bytes,test_requests,graph_requests
+Catalog,1000000,128,32,10000,3100
+Articles,3000000,384,40,10000,3200
+Media,5000000,768,48,10000,2900
+Catalog-L,10000000,128,32,10000,3400

@@ -1,0 +1,5 @@
+bin,requests,graph_requests,exact_ms,bpf_graph_ms,selfront_graph_ms,bpf_all_ms,selfront_all_ms,bpf_graph_recall,selfront_graph_recall
+1,2500,0,.420,,,.420,.420,,
+2,2500,0,1.050,,,1.050,1.050,,
+3,2500,1400,10.000,4.200,3.350,6.752,6.276,.958000,.956000
+4,2500,1800,18.000,2.500,2.100,6.840,6.552,.968333,.967111

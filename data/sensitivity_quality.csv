@@ -1,0 +1,7 @@
+parameter,value,collection,cohort,latency_ms,graph_requests,bin3_requests,bin4_requests,bin3_recall,bin4_recall,pooled_recall
+samples,4,Articles,graph,2.790,3200,1400,1800,0.9525,0.9631666667,0.9585
+samples,8,Articles,graph,2.647,3200,1400,1800,0.956,0.9671111111,0.96225
+samples,16,Articles,graph,2.730,3200,1400,1800,0.958,0.9686666667,0.964
+window,2,Articles,graph,2.840,3200,1400,1800,0.954,0.9646666667,0.96
+window,4,Articles,graph,2.647,3200,1400,1800,0.956,0.9671111111,0.96225
+window,8,Articles,graph,2.860,3200,1400,1800,0.9547,0.9653666667,0.9607

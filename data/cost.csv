@@ -1,0 +1,7 @@
+component,bpf_ms,selfront_ms
+predicate_preparation,.300,.300
+pilot,.300,.300
+adjacency_scan,.720,.540
+vector_work,1.620,1.120
+queue,.30375,.206875
+scheduler,0,.180

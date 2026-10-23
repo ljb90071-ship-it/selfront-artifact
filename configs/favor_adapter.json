@@ -1,0 +1,17 @@
+{
+  "base_formula": "FAVOR v1 equations 2, 5, 14 and Algorithm 3",
+  "kernel_distance": "squared Euclidean",
+  "ranking_distance": "Euclidean: sqrt(kernel_distance)",
+  "delta_d": "(mean_d64 - mean_d16) / 48",
+  "anchor_count": 1024,
+  "anchor_distance_unit": "Euclidean",
+  "penalty": "(1-sigma)*(E-sigma)*delta_d/(2*sigma*E)",
+  "selectivity": "exact bitmap cardinality / record count",
+  "width_normalization": true,
+  "termination_multiplier": 1,
+  "termination": "C empty, or W full and min(C score)>max(W score) and eligible_count(W)/E>0.5",
+  "admission": "W not full or strict adjusted-score improvement over worst W",
+  "result_order": "original distance then record ID",
+  "cardinality_completion": "exact eligible scan if fewer than k returned",
+  "scope": "scalar specification helpers; full adapter traversal not included"
+}

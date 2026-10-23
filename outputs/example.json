@@ -1,0 +1,2569 @@
+{
+  "exact_ids": [
+    9,
+    22,
+    3,
+    31,
+    39,
+    46,
+    52,
+    59,
+    1,
+    2
+  ],
+  "runs": {
+    "BPF": {
+      "ids": [
+        9,
+        22,
+        3,
+        31,
+        39,
+        46,
+        52,
+        59,
+        1,
+        2
+      ],
+      "squared_distances": [
+        0.9999999999999998,
+        0.9999999999999998,
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "counters": {
+        "expansions": 64,
+        "graph_distances": 64,
+        "adjacency_reads": 768,
+        "probe_reads": 0,
+        "fallback_distances": 0,
+        "scheduled_steps": 0
+      },
+      "trace": [
+        {
+          "step": 1,
+          "native": 0,
+          "chosen": 0,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 13
+        },
+        {
+          "step": 2,
+          "native": 3,
+          "chosen": 3,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 16
+        },
+        {
+          "step": 3,
+          "native": 9,
+          "chosen": 9,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 22
+        },
+        {
+          "step": 4,
+          "native": 15,
+          "chosen": 15,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": true,
+          "scores": [],
+          "discovered": 28
+        },
+        {
+          "step": 5,
+          "native": 59,
+          "chosen": 59,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 33
+        },
+        {
+          "step": 6,
+          "native": 1,
+          "chosen": 1,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 33
+        },
+        {
+          "step": 7,
+          "native": 2,
+          "chosen": 2,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 33
+        },
+        {
+          "step": 8,
+          "native": 4,
+          "chosen": 4,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": true,
+          "scores": [],
+          "discovered": 33
+        },
+        {
+          "step": 9,
+          "native": 5,
+          "chosen": 5,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 33
+        },
+        {
+          "step": 10,
+          "native": 6,
+          "chosen": 6,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 33
+        },
+        {
+          "step": 11,
+          "native": 7,
+          "chosen": 7,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 33
+        },
+        {
+          "step": 12,
+          "native": 10,
+          "chosen": 10,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": true,
+          "scores": [],
+          "discovered": 33
+        },
+        {
+          "step": 13,
+          "native": 11,
+          "chosen": 11,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 33
+        },
+        {
+          "step": 14,
+          "native": 12,
+          "chosen": 12,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 33
+        },
+        {
+          "step": 15,
+          "native": 14,
+          "chosen": 14,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 33
+        },
+        {
+          "step": 16,
+          "native": 16,
+          "chosen": 16,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": true,
+          "scores": [],
+          "discovered": 34
+        },
+        {
+          "step": 17,
+          "native": 22,
+          "chosen": 22,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 40
+        },
+        {
+          "step": 18,
+          "native": 17,
+          "chosen": 17,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 40
+        },
+        {
+          "step": 19,
+          "native": 18,
+          "chosen": 18,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 40
+        },
+        {
+          "step": 20,
+          "native": 19,
+          "chosen": 19,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": true,
+          "scores": [],
+          "discovered": 40
+        },
+        {
+          "step": 21,
+          "native": 20,
+          "chosen": 20,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 40
+        },
+        {
+          "step": 22,
+          "native": 23,
+          "chosen": 23,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 41
+        },
+        {
+          "step": 23,
+          "native": 24,
+          "chosen": 24,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 42
+        },
+        {
+          "step": 24,
+          "native": 25,
+          "chosen": 25,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": true,
+          "scores": [],
+          "discovered": 43
+        },
+        {
+          "step": 25,
+          "native": 31,
+          "chosen": 31,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 49
+        },
+        {
+          "step": 26,
+          "native": 26,
+          "chosen": 26,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 49
+        },
+        {
+          "step": 27,
+          "native": 27,
+          "chosen": 27,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 49
+        },
+        {
+          "step": 28,
+          "native": 28,
+          "chosen": 28,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": true,
+          "scores": [],
+          "discovered": 49
+        },
+        {
+          "step": 29,
+          "native": 29,
+          "chosen": 29,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 49
+        },
+        {
+          "step": 30,
+          "native": 32,
+          "chosen": 32,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 50
+        },
+        {
+          "step": 31,
+          "native": 33,
+          "chosen": 33,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 51
+        },
+        {
+          "step": 32,
+          "native": 39,
+          "chosen": 39,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": true,
+          "scores": [],
+          "discovered": 57
+        },
+        {
+          "step": 33,
+          "native": 34,
+          "chosen": 34,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 57
+        },
+        {
+          "step": 34,
+          "native": 35,
+          "chosen": 35,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 57
+        },
+        {
+          "step": 35,
+          "native": 36,
+          "chosen": 36,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 57
+        },
+        {
+          "step": 36,
+          "native": 37,
+          "chosen": 37,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": true,
+          "scores": [],
+          "discovered": 57
+        },
+        {
+          "step": 37,
+          "native": 38,
+          "chosen": 38,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 57
+        },
+        {
+          "step": 38,
+          "native": 40,
+          "chosen": 40,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 58
+        },
+        {
+          "step": 39,
+          "native": 46,
+          "chosen": 46,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 40,
+          "native": 52,
+          "chosen": 52,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": true,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 41,
+          "native": 41,
+          "chosen": 41,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 42,
+          "native": 42,
+          "chosen": 42,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 43,
+          "native": 43,
+          "chosen": 43,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 44,
+          "native": 44,
+          "chosen": 44,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": true,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 45,
+          "native": 45,
+          "chosen": 45,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 46,
+          "native": 47,
+          "chosen": 47,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 47,
+          "native": 48,
+          "chosen": 48,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 48,
+          "native": 49,
+          "chosen": 49,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": true,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 49,
+          "native": 50,
+          "chosen": 50,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 50,
+          "native": 51,
+          "chosen": 51,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 51,
+          "native": 53,
+          "chosen": 53,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 52,
+          "native": 54,
+          "chosen": 54,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": true,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 53,
+          "native": 55,
+          "chosen": 55,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 54,
+          "native": 56,
+          "chosen": 56,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 55,
+          "native": 57,
+          "chosen": 57,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 56,
+          "native": 58,
+          "chosen": 58,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": true,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 57,
+          "native": 60,
+          "chosen": 60,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 58,
+          "native": 61,
+          "chosen": 61,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 59,
+          "native": 62,
+          "chosen": 62,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 60,
+          "native": 63,
+          "chosen": 63,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": true,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 61,
+          "native": 8,
+          "chosen": 8,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 62,
+          "native": 13,
+          "chosen": 13,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 63,
+          "native": 21,
+          "chosen": 21,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 64,
+          "native": 30,
+          "chosen": 30,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": true,
+          "scores": [],
+          "discovered": 64
+        }
+      ],
+      "recall": 1.0
+    },
+    "SelFront": {
+      "ids": [
+        9,
+        22,
+        3,
+        31,
+        39,
+        46,
+        52,
+        59,
+        1,
+        2
+      ],
+      "squared_distances": [
+        0.9999999999999998,
+        0.9999999999999998,
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999,
+        1.0,
+        1.0
+      ],
+      "fallback": false,
+      "counters": {
+        "expansions": 64,
+        "graph_distances": 64,
+        "adjacency_reads": 768,
+        "probe_reads": 1320,
+        "fallback_distances": 0,
+        "scheduled_steps": 42
+      },
+      "trace": [
+        {
+          "step": 1,
+          "native": 0,
+          "chosen": 0,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 13
+        },
+        {
+          "step": 2,
+          "native": 3,
+          "chosen": 3,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 16
+        },
+        {
+          "step": 3,
+          "native": 9,
+          "chosen": 9,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 22
+        },
+        {
+          "step": 4,
+          "native": 15,
+          "chosen": 15,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": true,
+          "scores": [],
+          "discovered": 28
+        },
+        {
+          "step": 5,
+          "native": 59,
+          "chosen": 59,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 33
+        },
+        {
+          "step": 6,
+          "native": 1,
+          "chosen": 1,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 33
+        },
+        {
+          "step": 7,
+          "native": 2,
+          "chosen": 2,
+          "mode_before": false,
+          "mode_after": false,
+          "periodic": false,
+          "scores": [],
+          "discovered": 33
+        },
+        {
+          "step": 8,
+          "native": 4,
+          "chosen": 4,
+          "mode_before": false,
+          "mode_after": true,
+          "periodic": true,
+          "scores": [],
+          "discovered": 33
+        },
+        {
+          "step": 9,
+          "native": 5,
+          "chosen": 5,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 5,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 6,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 7,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 10,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 33
+        },
+        {
+          "step": 10,
+          "native": 6,
+          "chosen": 6,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 6,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 7,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 10,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 11,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 33
+        },
+        {
+          "step": 11,
+          "native": 7,
+          "chosen": 7,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 7,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 10,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 11,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 12,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 33
+        },
+        {
+          "step": 12,
+          "native": 10,
+          "chosen": 10,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": true,
+          "scores": [],
+          "discovered": 33
+        },
+        {
+          "step": 13,
+          "native": 11,
+          "chosen": 16,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 11,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 12,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 14,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 16,
+              "distance": 1.0,
+              "u": 1.5,
+              "y": 1.5,
+              "score": 0.08333333333333333
+            }
+          ],
+          "discovered": 34
+        },
+        {
+          "step": 14,
+          "native": 22,
+          "chosen": 22,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 22,
+              "distance": 0.9999999999999998,
+              "u": 10.5,
+              "y": 7.5,
+              "score": 0.1388888888888889
+            },
+            {
+              "id": 11,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 12,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 14,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 40
+        },
+        {
+          "step": 15,
+          "native": 11,
+          "chosen": 11,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 11,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 12,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 14,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 17,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 40
+        },
+        {
+          "step": 16,
+          "native": 12,
+          "chosen": 12,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": true,
+          "scores": [],
+          "discovered": 40
+        },
+        {
+          "step": 17,
+          "native": 14,
+          "chosen": 14,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 14,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 17,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 18,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 19,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 40
+        },
+        {
+          "step": 18,
+          "native": 17,
+          "chosen": 17,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 17,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 18,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 19,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 20,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 40
+        },
+        {
+          "step": 19,
+          "native": 18,
+          "chosen": 23,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 18,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 19,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 20,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 23,
+              "distance": 1.0,
+              "u": 1.5,
+              "y": 1.5,
+              "score": 0.08333333333333333
+            }
+          ],
+          "discovered": 41
+        },
+        {
+          "step": 20,
+          "native": 18,
+          "chosen": 18,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": true,
+          "scores": [],
+          "discovered": 41
+        },
+        {
+          "step": 21,
+          "native": 19,
+          "chosen": 19,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 19,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 20,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 24,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 25,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 41
+        },
+        {
+          "step": 22,
+          "native": 20,
+          "chosen": 25,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 20,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 24,
+              "distance": 1.0,
+              "u": 1.5,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 25,
+              "distance": 1.0,
+              "u": 3.0,
+              "y": 3.0,
+              "score": 0.125
+            },
+            {
+              "id": 26,
+              "distance": 1.0,
+              "u": 1.5,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 43
+        },
+        {
+          "step": 23,
+          "native": 31,
+          "chosen": 31,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 31,
+              "distance": 0.9999999999999999,
+              "u": 4.5,
+              "y": 3.0,
+              "score": 0.1
+            },
+            {
+              "id": 20,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 24,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 26,
+              "distance": 1.0,
+              "u": 1.5,
+              "y": 1.5,
+              "score": 0.08333333333333333
+            }
+          ],
+          "discovered": 49
+        },
+        {
+          "step": 24,
+          "native": 20,
+          "chosen": 20,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": true,
+          "scores": [],
+          "discovered": 49
+        },
+        {
+          "step": 25,
+          "native": 24,
+          "chosen": 24,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 24,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 26,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 27,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 28,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 49
+        },
+        {
+          "step": 26,
+          "native": 26,
+          "chosen": 26,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 26,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 27,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 28,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 29,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 49
+        },
+        {
+          "step": 27,
+          "native": 27,
+          "chosen": 27,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 27,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 28,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 29,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 32,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 49
+        },
+        {
+          "step": 28,
+          "native": 28,
+          "chosen": 28,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": true,
+          "scores": [],
+          "discovered": 49
+        },
+        {
+          "step": 29,
+          "native": 29,
+          "chosen": 32,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 29,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 32,
+              "distance": 1.0,
+              "u": 3.0,
+              "y": 3.0,
+              "score": 0.125
+            },
+            {
+              "id": 33,
+              "distance": 1.0,
+              "u": 1.5,
+              "y": 1.5,
+              "score": 0.08333333333333333
+            },
+            {
+              "id": 34,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 50
+        },
+        {
+          "step": 30,
+          "native": 29,
+          "chosen": 35,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 29,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 33,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 34,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 35,
+              "distance": 1.0,
+              "u": 3.0,
+              "y": 3.0,
+              "score": 0.125
+            }
+          ],
+          "discovered": 53
+        },
+        {
+          "step": 31,
+          "native": 39,
+          "chosen": 39,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 39,
+              "distance": 0.9999999999999999,
+              "u": 4.5,
+              "y": 3.0,
+              "score": 0.1
+            },
+            {
+              "id": 29,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 33,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 34,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 57
+        },
+        {
+          "step": 32,
+          "native": 29,
+          "chosen": 29,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": true,
+          "scores": [],
+          "discovered": 57
+        },
+        {
+          "step": 33,
+          "native": 33,
+          "chosen": 33,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 33,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 34,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 36,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 37,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 57
+        },
+        {
+          "step": 34,
+          "native": 34,
+          "chosen": 34,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 34,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 36,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 37,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 38,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 57
+        },
+        {
+          "step": 35,
+          "native": 36,
+          "chosen": 40,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 36,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 37,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 38,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 40,
+              "distance": 1.0,
+              "u": 1.5,
+              "y": 1.5,
+              "score": 0.08333333333333333
+            }
+          ],
+          "discovered": 58
+        },
+        {
+          "step": 36,
+          "native": 46,
+          "chosen": 46,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": true,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 37,
+          "native": 52,
+          "chosen": 52,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 52,
+              "distance": 0.9999999999999999,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 36,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 37,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 38,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 38,
+          "native": 36,
+          "chosen": 36,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 36,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 37,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 38,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 41,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 39,
+          "native": 37,
+          "chosen": 37,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 37,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 38,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 41,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 42,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 40,
+          "native": 38,
+          "chosen": 38,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": true,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 41,
+          "native": 41,
+          "chosen": 41,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 41,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 42,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 43,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 44,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 42,
+          "native": 42,
+          "chosen": 42,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 42,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 43,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 44,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 45,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 43,
+          "native": 43,
+          "chosen": 43,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 43,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 44,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 45,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 47,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 44,
+          "native": 44,
+          "chosen": 44,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": true,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 45,
+          "native": 45,
+          "chosen": 45,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 45,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 47,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 48,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 49,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 46,
+          "native": 47,
+          "chosen": 47,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 47,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 48,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 49,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 50,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 47,
+          "native": 48,
+          "chosen": 48,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 48,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 49,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 50,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 51,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 48,
+          "native": 49,
+          "chosen": 49,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": true,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 49,
+          "native": 50,
+          "chosen": 50,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 50,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 51,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 53,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 54,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 50,
+          "native": 51,
+          "chosen": 51,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 51,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 53,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 54,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 55,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 51,
+          "native": 53,
+          "chosen": 53,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 53,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 54,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 55,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 56,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 52,
+          "native": 54,
+          "chosen": 54,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": true,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 53,
+          "native": 55,
+          "chosen": 55,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 55,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 56,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 57,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 58,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 54,
+          "native": 56,
+          "chosen": 56,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 56,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 57,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 58,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 60,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 55,
+          "native": 57,
+          "chosen": 57,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 57,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 58,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 60,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 61,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 56,
+          "native": 58,
+          "chosen": 58,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": true,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 57,
+          "native": 60,
+          "chosen": 60,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 60,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 61,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 62,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 63,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 58,
+          "native": 61,
+          "chosen": 61,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 61,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 62,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 63,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 8,
+              "distance": 1.0000000000000002,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 59,
+          "native": 62,
+          "chosen": 62,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 62,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 63,
+              "distance": 1.0,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 8,
+              "distance": 1.0000000000000002,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 13,
+              "distance": 1.0000000000000002,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 60,
+          "native": 63,
+          "chosen": 63,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": true,
+          "scores": [],
+          "discovered": 64
+        },
+        {
+          "step": 61,
+          "native": 8,
+          "chosen": 8,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 8,
+              "distance": 1.0000000000000002,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 13,
+              "distance": 1.0000000000000002,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 21,
+              "distance": 1.0000000000000002,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 30,
+              "distance": 1.0000000000000002,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 62,
+          "native": 13,
+          "chosen": 13,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 13,
+              "distance": 1.0000000000000002,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 21,
+              "distance": 1.0000000000000002,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 30,
+              "distance": 1.0000000000000002,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 63,
+          "native": 21,
+          "chosen": 21,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": false,
+          "scores": [
+            {
+              "id": 21,
+              "distance": 1.0000000000000002,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            },
+            {
+              "id": 30,
+              "distance": 1.0000000000000002,
+              "u": 0.0,
+              "y": 0.0,
+              "score": 0.0
+            }
+          ],
+          "discovered": 64
+        },
+        {
+          "step": 64,
+          "native": 30,
+          "chosen": 30,
+          "mode_before": true,
+          "mode_after": true,
+          "periodic": true,
+          "scores": [],
+          "discovered": 64
+        }
+      ],
+      "recall": 1.0
+    }
+  }
+}

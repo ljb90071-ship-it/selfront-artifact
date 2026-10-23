@@ -1,0 +1,22 @@
+[
+  {
+    "collection": "Catalog",
+    "graph_reduction_percent": 20.000000000000007,
+    "all_reduction_percent": 5.3913043478260985
+  },
+  {
+    "collection": "Articles",
+    "graph_reduction_percent": 18.403205918619005,
+    "all_reduction_percent": 5.072367547470447
+  },
+  {
+    "collection": "Media",
+    "graph_reduction_percent": 9.722222222222221,
+    "all_reduction_percent": 2.1827956989247443
+  },
+  {
+    "collection": "Catalog-L",
+    "graph_reduction_percent": 21.666666666666668,
+    "all_reduction_percent": 5.666666666666664
+  }
+]

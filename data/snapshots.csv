@@ -1,0 +1,5 @@
+collection,snapshot_id,cutoff,record_key,split_key,record_count,dimension
+Catalog,SF-Catalog-20260901-1M,2026-09-01,product_id,parent_product_id,1000000,128
+Catalog-L,SF-Catalog-20260901-10M,2026-09-01,product_id,parent_product_id,10000000,128
+Articles,SF-Articles-20260901-3M,2026-09-01,document_id,document_id,3000000,384
+Media,SF-Media-20260901-5M,2026-09-01,asset_id,asset_id,5000000,768
