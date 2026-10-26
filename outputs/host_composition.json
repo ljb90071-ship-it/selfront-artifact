@@ -6,7 +6,19 @@
     "interval95_ms": [
       0.13112976852723096,
       0.20887023147276934
-    ]
+    ],
+    "mean_recalls": {
+      "FAVOR-A": 0.988,
+      "Eligible-first": 0.988,
+      "Shuffled-score": 0.98725,
+      "SelFront": 0.9875
+    },
+    "minimum_recalls": {
+      "FAVOR-A": 0.972,
+      "Eligible-first": 0.972,
+      "Shuffled-score": 0.97,
+      "SelFront": 0.97
+    }
   },
   {
     "collection": "Articles",
@@ -15,7 +27,19 @@
     "interval95_ms": [
       0.41670664684406605,
       0.583293353155934
-    ]
+    ],
+    "mean_recalls": {
+      "FAVOR-A": 0.989,
+      "Eligible-first": 0.989,
+      "Shuffled-score": 0.98825,
+      "SelFront": 0.9884999999999999
+    },
+    "minimum_recalls": {
+      "FAVOR-A": 0.974,
+      "Eligible-first": 0.974,
+      "Shuffled-score": 0.972,
+      "SelFront": 0.972
+    }
   },
   {
     "collection": "Media",
@@ -24,7 +48,19 @@
     "interval95_ms": [
       0.24894219579208748,
       0.4710578042079114
-    ]
+    ],
+    "mean_recalls": {
+      "FAVOR-A": 0.986,
+      "Eligible-first": 0.986,
+      "Shuffled-score": 0.98525,
+      "SelFront": 0.9855
+    },
+    "minimum_recalls": {
+      "FAVOR-A": 0.968,
+      "Eligible-first": 0.968,
+      "Shuffled-score": 0.966,
+      "SelFront": 0.966
+    }
   },
   {
     "collection": "Catalog-L",
@@ -33,6 +69,18 @@
     "interval95_ms": [
       0.7872955192141214,
       1.0927044807858792
-    ]
+    ],
+    "mean_recalls": {
+      "FAVOR-A": 0.987,
+      "Eligible-first": 0.987,
+      "Shuffled-score": 0.98625,
+      "SelFront": 0.9864999999999999
+    },
+    "minimum_recalls": {
+      "FAVOR-A": 0.97,
+      "Eligible-first": 0.97,
+      "Shuffled-score": 0.968,
+      "SelFront": 0.968
+    }
   }
 ]

@@ -1,0 +1,5 @@
+collection,variant,width,g,test_requests,bin_requests,target,test_ms,recall_bin1,recall_bin2,recall_bin3,recall_bin4
+Articles,FAVOR-A,384,0.01,10000,2500,0.9880,3.470,1,1,0.9720,0.9810
+Articles,SelFront,512,0.01,10000,2500,0.9880,3.290,1,1,0.9720,0.9820
+Media,FAVOR-A,768,0.01,10000,2500,0.9855,8.300,1,1,0.9670,0.9760
+Media,SelFront,1024,0.01,10000,2500,0.9855,8.580,1,1,0.9660,0.9760

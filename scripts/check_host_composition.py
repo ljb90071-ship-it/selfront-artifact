@@ -37,7 +37,13 @@ for c in contrasts:
  assert times['FAVOR-A']==float(legacy[c['collection']]['favor_ms'])
  delta=times['FAVOR-A']-times['SelFront'];assert abs(delta-float(c['mean_saving_ms']))<1e-12
  radius=2.7764451051977987*float(c['se_ms'])
- summary.append(dict(collection=c['collection'],saving_percent=100*delta/times['FAVOR-A'],saving_ms=delta,interval95_ms=[delta-radius,delta+radius]))
+ recalls={x['variant']:sum(float(x[f'recall_bin{i}']) for i in range(1,5))/4 for x in group}
+ assert abs(recalls['FAVOR-A']-recalls['SelFront']-.0005)<1e-12
+ assert recalls['FAVOR-A']==recalls['Eligible-first']
+ assert abs(recalls['SelFront']-recalls['Shuffled-score']-.00025)<1e-12
+ sr=next(x for x in group if x['variant']=='SelFront'); sh=next(x for x in group if x['variant']=='Shuffled-score')
+ assert all(float(sr[f'recall_bin{i}'])>=float(sh[f'recall_bin{i}']) for i in range(1,5))
+ summary.append(dict(collection=c['collection'],saving_percent=100*delta/times['FAVOR-A'],saving_ms=delta,interval95_ms=[delta-radius,delta+radius],mean_recalls=recalls,minimum_recalls={x['variant']:min(float(x[f'recall_bin{i}']) for i in range(1,5)) for x in group}))
 (ROOT/'outputs/host_composition.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')
 print('Host stopping/bound/native-step/tie/read-only checks passed; 16 composition rows and four contrasts consistent.')
 print(json.dumps(summary,indent=2))

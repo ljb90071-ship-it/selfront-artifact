@@ -29,6 +29,8 @@ python scripts/check_selection.py
 python scripts/analyze_contrasts.py
 python scripts/check_opportunity.py
 python scripts/check_host_composition.py
+python scripts/check_profile_mismatch.py
+python scripts/check_host_tuning.py
 ```
 
 `run_example.py` computes BPF and SelFront results and expansion traces on the
@@ -64,3 +66,7 @@ connects these settings to the aggregate latency and recall tables.
 [Matched request strata](data/matched_strata.csv) separate depletion, rate spread and disagreement with the native-first candidate. The [opportunity calculation](scripts/check_opportunity.py) enumerates a two-candidate decision and checks the subset against full-cohort and selectivity-bin totals. Inspect [exact decisions](outputs/exact_window_check.json) and the [compatible remainder](outputs/subset_compatibility.json) alongside the cost decomposition in Figure 3.
 
 [Host composition](docs/host-composition.md) specifies how a filter-aware priority supplies its stopping test and admissible window. The [selection interface](src/host_window.py) reads a supplied frontier without changing host state. The [composition check](scripts/check_host_composition.py) exercises stopping, open bounds, native steps and ties, then calculates [host comparison summaries](outputs/host_composition.json) from [latency/quality records](data/host_composition.csv).
+
+[Relative-cost sensitivity](scripts/check_profile_mismatch.py) enumerates candidate choices under five scoring profiles while holding the evaluation cost fixed; [results](outputs/profile_mismatch.json) separate exact-count flips from sampling error.
+
+[Independent host-width selection](scripts/check_host_tuning.py) checks the [12 tuning candidates](data/host_tuning_grid.csv), [four selected test points](data/host_selected_test.csv), and preserved fixed-host anchors. [Selection output](outputs/host_tuning_checks.json) records the quality-constrained choices.

@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "scope": "Arithmetic and finite selection on constructed aggregate records; not a benchmark",
+  "candidates": 12,
+  "selected": [
+    {
+      "collection": "Articles",
+      "variant": "FAVOR-A",
+      "width": 384,
+      "tuning_ms": "3.440",
+      "tuning_recall": "0.9882",
+      "test_ms": "3.470",
+      "test_recall": "0.98825",
+      "test_min_bin": "0.9720",
+      "test_target_met": true,
+      "existing_test_anchor_preserved": false
+    },
+    {
+      "collection": "Articles",
+      "variant": "SelFront",
+      "width": 512,
+      "tuning_ms": "3.260",
+      "tuning_recall": "0.9882",
+      "test_ms": "3.290",
+      "test_recall": "0.9885",
+      "test_min_bin": "0.9720",
+      "test_target_met": true,
+      "existing_test_anchor_preserved": true
+    },
+    {
+      "collection": "Media",
+      "variant": "FAVOR-A",
+      "width": 768,
+      "tuning_ms": "8.260",
+      "tuning_recall": "0.9856",
+      "test_ms": "8.300",
+      "test_recall": "0.98575",
+      "test_min_bin": "0.9670",
+      "test_target_met": true,
+      "existing_test_anchor_preserved": false
+    },
+    {
+      "collection": "Media",
+      "variant": "SelFront",
+      "width": 1024,
+      "tuning_ms": "8.540",
+      "tuning_recall": "0.9856",
+      "test_ms": "8.580",
+      "test_recall": "0.9855",
+      "test_min_bin": "0.9660",
+      "test_target_met": true,
+      "existing_test_anchor_preserved": true
+    }
+  ],
+  "comparisons": [
+    {
+      "collection": "Articles",
+      "baseline_name": "FAVOR-A",
+      "favor_minus_selfront_ms": "0.180",
+      "selfront_reduction_percent": "5.187319884726224783861671470",
+      "selfront_minus_favor_recall": "0.00025"
+    },
+    {
+      "collection": "Media",
+      "baseline_name": "FAVOR-A",
+      "favor_minus_selfront_ms": "-0.280",
+      "selfront_reduction_percent": "-3.373493975903614457831325301",
+      "selfront_minus_favor_recall": "-0.00025"
+    }
+  ]
+}

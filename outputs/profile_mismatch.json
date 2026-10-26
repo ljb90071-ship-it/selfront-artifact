@@ -1,0 +1,67 @@
+{
+  "scope": "exact one-window sensitivity at fixed evaluation profile rho=10,kappa=2; independent replacement s=8; native wins ties",
+  "degree": 32,
+  "states_U_Y": [
+    [
+      4,
+      2
+    ],
+    [
+      16,
+      5
+    ]
+  ],
+  "true_rates": [
+    0.02702702702702703,
+    0.02577319587628866
+  ],
+  "crossing": "rho = 8 + kappa/4",
+  "rows": [
+    {
+      "rho": 5,
+      "kappa": 2,
+      "exact_count_choice": 1,
+      "probability_select_true_best": 0.4786704266336849,
+      "expected_true_rate": 0.0263733677681392,
+      "relative_local_regret": 0.024185392578849666,
+      "exact_count_relative_regret": 0.04639175257731959
+    },
+    {
+      "rho": 10,
+      "kappa": 2,
+      "exact_count_choice": 0,
+      "probability_select_true_best": 0.5065817993397503,
+      "expected_true_rate": 0.02640836391669793,
+      "relative_local_regret": 0.02289053508217653,
+      "exact_count_relative_regret": 0.0
+    },
+    {
+      "rho": 20,
+      "kappa": 2,
+      "exact_count_choice": 0,
+      "probability_select_true_best": 0.5135452221587098,
+      "expected_true_rate": 0.026417094873144104,
+      "relative_local_regret": 0.0225674896936681,
+      "exact_count_relative_regret": 0.0
+    },
+    {
+      "rho": 10,
+      "kappa": 0,
+      "exact_count_choice": 0,
+      "probability_select_true_best": 0.5065817993397503,
+      "expected_true_rate": 0.02640836391669793,
+      "relative_local_regret": 0.02289053508217653,
+      "exact_count_relative_regret": 0.0
+    },
+    {
+      "rho": 10,
+      "kappa": 4,
+      "exact_count_choice": 0,
+      "probability_select_true_best": 0.5065817993397503,
+      "expected_true_rate": 0.02640836391669793,
+      "relative_local_regret": 0.02289053508217653,
+      "exact_count_relative_regret": 0.0
+    }
+  ],
+  "wide_gap_rectangle_check": "PASS"
+}

@@ -37,3 +37,7 @@ All archived fields and rounding rules are defined in the [data dictionary](data
 | Table 9 / Section 6.6 | [host results](data/host_composition.csv), [paired contrasts](data/host_contrasts.csv) | Fixed host settings, per-bin recall and additional savings |
 
 The earlier depletion quartiles remain available as [an auxiliary decomposition](data/quartiles.csv); Figure 3 uses the matched request strata. Table 3 displays the graph columns of the full bin archive, rounded to four recall decimals.
+
+| Section 5.3 relative-cost mismatch | [calculation](scripts/check_profile_mismatch.py), [output](outputs/profile_mismatch.json) | Five scoring profiles, fixed evaluation cost, exact and sampled choices |
+
+Independent host-width selection in Section 6.6 uses [the candidate grid](data/host_tuning_grid.csv), [selected test bins](data/host_selected_test.csv), and [the selection check](scripts/check_host_tuning.py).
