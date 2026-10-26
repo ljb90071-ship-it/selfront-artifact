@@ -1,0 +1,5 @@
+collection,mean_saving_ms,se_ms,repetitions
+Catalog,0.17000000000000015,0.014,5
+Articles,0.5,0.03,5
+Media,0.35999999999999943,0.04,5
+Catalog-L,0.9400000000000004,0.055,5

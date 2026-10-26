@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "scope": "aggregate compatibility allocation",
+  "matched_per_cell_correlation": [
+    160,
+    36,
+    4
+  ],
+  "matched_per_cell_per_bin_correlation": [
+    80,
+    18,
+    2
+  ],
+  "original_bin_correlation": {
+    "3": [
+      1090,
+      290,
+      20
+    ],
+    "4": [
+      1250,
+      500,
+      50
+    ]
+  },
+  "residual_bins": [
+    {
+      "bin": 3,
+      "method": "bpf",
+      "n": 800,
+      "mean_ms": 4.93375,
+      "recall": 0.95375,
+      "positive": 610,
+      "weak": 182,
+      "adverse": 8,
+      "preparation": 0.3,
+      "pilot": 0.3,
+      "adjacency_scan": 1.1802553191489362,
+      "vector_work": 2.6555744680851063,
+      "queue": 0.49792021276595744,
+      "scheduler": 0.0
+    },
+    {
+      "bin": 3,
+      "method": "selfront",
+      "n": 800,
+      "mean_ms": 3.5425,
+      "recall": 0.9510625,
+      "positive": 610,
+      "weak": 182,
+      "adverse": 8,
+      "preparation": 0.3,
+      "pilot": 0.3,
+      "adjacency_scan": 0.8155325323138024,
+      "vector_work": 1.6325272025705246,
+      "queue": 0.299440265115673,
+      "scheduler": 0.195
+    },
+    {
+      "bin": 4,
+      "method": "bpf",
+      "n": 1200,
+      "mean_ms": 2.1391666666666667,
+      "recall": 0.9706666666666667,
+      "positive": 770,
+      "weak": 392,
+      "adverse": 38,
+      "preparation": 0.3,
+      "pilot": 0.3,
+      "adjacency_scan": 0.41917730496453903,
+      "vector_work": 0.9431489361702128,
+      "queue": 0.1768404255319149,
+      "scheduler": 0.0
+    },
+    {
+      "bin": 4,
+      "method": "selfront",
+      "n": 1200,
+      "mean_ms": 1.6033333333333333,
+      "recall": 0.969375,
+      "positive": 770,
+      "weak": 392,
+      "adverse": 38,
+      "preparation": 0.3,
+      "pilot": 0.3,
+      "adjacency_scan": 0.24913194376103737,
+      "vector_work": 0.47741965273477444,
+      "queue": 0.08678173683752154,
+      "scheduler": 0.19
+    }
+  ],
+  "residual_pooled": [
+    {
+      "method": "bpf",
+      "n": 2000,
+      "mean_ms": 3.257,
+      "recall": 0.9639,
+      "preparation": 0.3,
+      "pilot": 0.3,
+      "adjacency_scan": 0.723608510638298,
+      "vector_work": 1.6281191489361702,
+      "queue": 0.3052723404255319,
+      "scheduler": 0.0
+    },
+    {
+      "method": "selfront",
+      "n": 2000,
+      "mean_ms": 2.379,
+      "recall": 0.96205,
+      "preparation": 0.3,
+      "pilot": 0.3,
+      "adjacency_scan": 0.4756921791821434,
+      "vector_work": 0.9394626726690745,
+      "queue": 0.17184514814878213,
+      "scheduler": 0.192
+    }
+  ],
+  "shuffled_residual": {
+    "n": 2000,
+    "mean_ms": 3.265,
+    "recall": 0.96082
+  }
+}

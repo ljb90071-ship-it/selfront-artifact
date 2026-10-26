@@ -1,0 +1,17 @@
+collection,variant,E,g,requests,mean_ms,recall_bin1,recall_bin2,recall_bin3,recall_bin4
+Catalog,FAVOR-A,256,0.01,10000,1.82,1,1,0.972,0.98
+Catalog,Eligible-first,256,0.01,10000,1.81,1,1,0.972,0.98
+Catalog,Shuffled-score,256,0.01,10000,1.84,1,1,0.97,0.979
+Catalog,SelFront,256,0.01,10000,1.65,1,1,0.97,0.98
+Articles,FAVOR-A,512,0.01,10000,3.79,1,1,0.974,0.982
+Articles,Eligible-first,512,0.01,10000,3.77,1,1,0.974,0.982
+Articles,Shuffled-score,512,0.01,10000,3.82,1,1,0.972,0.981
+Articles,SelFront,512,0.01,10000,3.29,1,1,0.972,0.982
+Media,FAVOR-A,1024,0.01,10000,8.94,1,1,0.968,0.976
+Media,Eligible-first,1024,0.01,10000,8.92,1,1,0.968,0.976
+Media,Shuffled-score,1024,0.01,10000,9.02,1,1,0.966,0.975
+Media,SelFront,1024,0.01,10000,8.58,1,1,0.966,0.976
+Catalog-L,FAVOR-A,1024,0.01,10000,7.66,1,1,0.97,0.978
+Catalog-L,Eligible-first,1024,0.01,10000,7.63,1,1,0.97,0.978
+Catalog-L,Shuffled-score,1024,0.01,10000,7.71,1,1,0.968,0.977
+Catalog-L,SelFront,1024,0.01,10000,6.72,1,1,0.968,0.978

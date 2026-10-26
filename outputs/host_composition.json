@@ -1,0 +1,38 @@
+[
+  {
+    "collection": "Catalog",
+    "saving_percent": 9.340659340659348,
+    "saving_ms": 0.17000000000000015,
+    "interval95_ms": [
+      0.13112976852723096,
+      0.20887023147276934
+    ]
+  },
+  {
+    "collection": "Articles",
+    "saving_percent": 13.192612137203167,
+    "saving_ms": 0.5,
+    "interval95_ms": [
+      0.41670664684406605,
+      0.583293353155934
+    ]
+  },
+  {
+    "collection": "Media",
+    "saving_percent": 4.026845637583887,
+    "saving_ms": 0.35999999999999943,
+    "interval95_ms": [
+      0.24894219579208748,
+      0.4710578042079114
+    ]
+  },
+  {
+    "collection": "Catalog-L",
+    "saving_percent": 12.271540469973896,
+    "saving_ms": 0.9400000000000004,
+    "interval95_ms": [
+      0.7872955192141214,
+      1.0927044807858792
+    ]
+  }
+]

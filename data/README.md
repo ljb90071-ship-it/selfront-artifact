@@ -35,3 +35,9 @@ Local sampling uses degree 32 and (a,b,c)=(1,4,0). The wide pair is (U,Y)=(6,2),
 - `snapshots.csv`: collection and snapshot identifier, cutoff date, record/split keys, record count and vector dimension. Identifiers are application descriptors, not third-party benchmark names or hosting URLs.
 
 The tuning counts are 640 Articles graph requests (280/360 by bin) and 580 Media graph requests (300/280). Selected test counts are 3200 (1400/1800) and 2900 (1500/1400). Recalls are decimal summary values, not integer hit-count files; small display differences are handled with explicit rounding tolerances.
+
+## Matched request strata and host composition
+
+`matched_strata.csv`: six request-level cells, 200 requests each, 100 per graph-eligible bin. Per-request medians define depletion (low <= .30, high >= .65), normalized rate spread (flat <= .10, other >= .50), and native-relative gap (aligned <= .10, opposed >= .50). The matching uses only native traces, a 10% native-vector-count caliper, and equal correlation composition across ordering strata. Each cell has 160 positive, 36 weak, and 4 adverse requests, equally split by bin. Times are complete-request means; host_saved_ms minus scheduler_ms equals bpf_ms minus selfront_ms. Recalls are request means. The 1200 matched requests are a subset of the original 3200, not a replacement population. `subset_compatibility.json` gives an allocation of remaining counts, recalls and nonnegative costs consistent with the aggregate tables.
+
+`host_composition.csv`: four collections by four variants at frozen E/g; 10000 requests per row; four equally populated selectivity-bin recalls and all-request latency in ms. `host_contrasts.csv`: FAVOR-A minus SelFront mean latency difference, standard error across five paired run means, and repetition count. The host checks calculate reductions and t4 intervals.

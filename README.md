@@ -13,7 +13,7 @@ its supporting material.
 - [Data dictionary](data/README.md): files, units, denominators and precision.
 - [Implementation](src/selfront.py): adjacency traversal, vector distances, scheduling and cardinality fallback.
 - [Example input](examples/circle.json): 64 unit-circle vectors and an adjacency graph.
-- Figures: [operator flow](figures/flow.pdf), [local probability](figures/local_probability.pdf), and [depletion](figures/depletion.pdf).
+- Figures: [remaining-work choice](figures/choice.pdf), [local probability](figures/local_probability.pdf), and [scheduling opportunity](figures/opportunity.pdf).
 - Outputs: [search traces](outputs/example.json), [sampling probabilities](outputs/probe_results.json), and [table comparisons](outputs/archive_summary.json).
 
 ## Run
@@ -27,6 +27,8 @@ python scripts/exact_sampling.py
 python scripts/analyze_archive.py
 python scripts/check_selection.py
 python scripts/analyze_contrasts.py
+python scripts/check_opportunity.py
+python scripts/check_host_composition.py
 ```
 
 `run_example.py` computes BPF and SelFront results and expansion traces on the
@@ -56,3 +58,9 @@ the collection-specific JSON configurations apply these ratios to the operator.
 specify distance conversion, penalty and stopping. [Snapshot descriptors](data/snapshots.csv)
 identify collections and split keys. The [evaluation protocol](docs/protocol.md)
 connects these settings to the aggregate latency and recall tables.
+
+## When to change the native choice
+
+[Matched request strata](data/matched_strata.csv) separate depletion, rate spread and disagreement with the native-first candidate. The [opportunity calculation](scripts/check_opportunity.py) enumerates a two-candidate decision and checks the subset against full-cohort and selectivity-bin totals. Inspect [exact decisions](outputs/exact_window_check.json) and the [compatible remainder](outputs/subset_compatibility.json) alongside the cost decomposition in Figure 3.
+
+[Host composition](docs/host-composition.md) specifies how a filter-aware priority supplies its stopping test and admissible window. The [selection interface](src/host_window.py) reads a supplied frontier without changing host state. The [composition check](scripts/check_host_composition.py) exercises stopping, open bounds, native steps and ties, then calculates [host comparison summaries](outputs/host_composition.json) from [latency/quality records](data/host_composition.csv).

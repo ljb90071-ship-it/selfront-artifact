@@ -27,3 +27,11 @@ The quartiles are formed separately within native-trace selectivity bins then co
 ## Paired contrast summaries
 
 The five repetitions use the same requests within each method pair and alternating method order after a disjoint warmup. The independent unit for the reported Student intervals is a paired run mean, not every repeated query execution. `paired_contrasts.csv` stores the mean difference and its run-level standard error. Articles target .960/.970 intervals stay positive; Media and fixed-versus-fresh intervals span zero and do not establish an ordering or equivalence.
+
+## Native-relative opportunity and composition
+
+The matched analysis in Figure 3 uses per-request medians of baseline-window diagnostics. Depletion alone describes lost eligible work; normalized rate spread describes differences among candidates; native-relative gap describes whether those differences favor a candidate other than the native minimum. Selection and matching precede variant comparisons. The six cells and their relation to the full cohort are defined in the data dictionary and checked by `check_opportunity.py`. Historical quartiles are auxiliary material.
+
+The second host retains FAVOR-A's own priority, stopping, heap admission and answer extraction. Fixed host settings isolate the additional neighborhood-state choice, as specified in [host composition](host-composition.md). Table 9 supplies complete-request latency and minimum test-bin recall; the CSV retains every bin.
+
+Window diagnostics set depletion to zero when the eligible-count denominator is zero, and set normalized spread and native-relative gap to zero when the maximum rate is zero. Each request is represented by the median of each window diagnostic before assigning strata.

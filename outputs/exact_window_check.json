@@ -1,0 +1,49 @@
+{
+  "scope": "exact one-window enumeration; independent replacement samples; no query speed claim",
+  "samples": 8,
+  "profile": {
+    "a": 1,
+    "b": 10,
+    "c": 2
+  },
+  "states": [
+    {
+      "name": "depleted",
+      "d": 32,
+      "A": 16,
+      "U": 6,
+      "Y": 2
+    },
+    {
+      "name": "productive",
+      "d": 32,
+      "A": 16,
+      "U": 14,
+      "Y": 10
+    }
+  ],
+  "true_rates": [
+    0.02127659574468085,
+    0.05747126436781609
+  ],
+  "mean_depletion": 0.625,
+  "normalized_spread": 0.6297872340425532,
+  "native_orders": [
+    {
+      "native": "depleted",
+      "native_gap": 0.6297872340425532,
+      "probability_select_productive": 0.829167174926088,
+      "expected_selected_true_rate": 0.05128802687431182,
+      "native_true_rate": 0.02127659574468085,
+      "expected_local_rate_change": 0.03001143112963097
+    },
+    {
+      "native": "productive",
+      "native_gap": 0.0,
+      "probability_select_productive": 0.8836365939807923,
+      "expected_selected_true_rate": 0.05325952944709153,
+      "native_true_rate": 0.05747126436781609,
+      "expected_local_rate_change": -0.004211734920724565
+    }
+  ]
+}
