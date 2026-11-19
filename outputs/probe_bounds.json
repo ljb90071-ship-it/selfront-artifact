@@ -1,0 +1,89 @@
+{
+  "finite_check": {
+    "two_candidate_sequences": 6561,
+    "sequences_by_reads_skipped": {
+      "0": 4146,
+      "1": 1056,
+      "2": 1359
+    },
+    "grouped_sequences_by_reads_skipped": {
+      "2": 912,
+      "3": 2476,
+      "4": 2192,
+      "5": 918,
+      "6": 63
+    },
+    "exact_scan_tie": "same winner with two fewer metadata reads"
+  },
+  "bottom_layer_pairs": [
+    {
+      "checkpoints": [],
+      "reuse_positions": false,
+      "seeds": 24,
+      "full_metadata_reads": 31680,
+      "metadata_reads": 31680,
+      "bound_checks": 0,
+      "paired_expansions": 1536,
+      "truth_hits": 240
+    },
+    {
+      "checkpoints": [
+        4
+      ],
+      "reuse_positions": false,
+      "seeds": 24,
+      "full_metadata_reads": 31680,
+      "metadata_reads": 31496,
+      "bound_checks": 2952,
+      "paired_expansions": 1536,
+      "truth_hits": 240
+    },
+    {
+      "checkpoints": [
+        6
+      ],
+      "reuse_positions": false,
+      "seeds": 24,
+      "full_metadata_reads": 31680,
+      "metadata_reads": 31360,
+      "bound_checks": 2952,
+      "paired_expansions": 1536,
+      "truth_hits": 240
+    },
+    {
+      "checkpoints": [
+        4,
+        6
+      ],
+      "reuse_positions": false,
+      "seeds": 24,
+      "full_metadata_reads": 31680,
+      "metadata_reads": 31268,
+      "bound_checks": 5858,
+      "paired_expansions": 1536,
+      "truth_hits": 240
+    },
+    {
+      "checkpoints": [],
+      "reuse_positions": true,
+      "seeds": 24,
+      "full_metadata_reads": 31680,
+      "metadata_reads": 23798,
+      "bound_checks": 0,
+      "paired_expansions": 1536,
+      "truth_hits": 240
+    },
+    {
+      "checkpoints": [
+        6
+      ],
+      "reuse_positions": true,
+      "seeds": 24,
+      "full_metadata_reads": 31680,
+      "metadata_reads": 23514,
+      "bound_checks": 2906,
+      "paired_expansions": 1536,
+      "truth_hits": 240
+    }
+  ]
+}

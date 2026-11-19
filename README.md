@@ -18,7 +18,7 @@ its supporting material.
 
 ## Run
 
-Use Python 3.10 or later and its standard library. Run from the repository root:
+Use Python 3.10 or later for the operator and summary checks. Run from the repository root:
 
 ```sh
 python scripts/run_example.py
@@ -31,6 +31,7 @@ python scripts/check_opportunity.py
 python scripts/check_host_composition.py
 python scripts/check_profile_mismatch.py
 python scripts/check_host_tuning.py
+python scripts/check_probe_bounds.py
 ```
 
 `run_example.py` computes BPF and SelFront results and expansion traces on the
@@ -70,3 +71,11 @@ connects these settings to the aggregate latency and recall tables.
 [Relative-cost sensitivity](scripts/check_profile_mismatch.py) enumerates candidate choices under five scoring profiles while holding the evaluation cost fixed; [results](outputs/profile_mismatch.json) separate exact-count flips from sampling error.
 
 [Independent host-width selection](scripts/check_host_tuning.py) checks the [12 tuning candidates](data/host_tuning_grid.csv), [four selected test points](data/host_selected_test.csv), and preserved fixed-host anchors. [Selection output](outputs/host_tuning_checks.json) records the quality-constrained choices.
+
+## Inspect probe work
+
+[Probe bounds and grouping](docs/probe-work.md) explains how to keep the same
+expansion sequence while reading fewer positions. The
+[finite and bottom-layer checks](scripts/check_probe_bounds.py) exercise both
+policies in the reference operator. The guide links the exact enumeration,
+the paired FAVOR-A work counts, and the OptDigits data and reproducible runner.

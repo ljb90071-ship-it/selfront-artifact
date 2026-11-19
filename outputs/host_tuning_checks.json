@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "scope": "Arithmetic and finite selection on constructed aggregate records; not a benchmark",
+  "scope": "Finite-grid selection and aggregate checks",
   "candidates": 12,
   "selected": [
     {

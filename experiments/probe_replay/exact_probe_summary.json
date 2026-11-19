@@ -1,0 +1,20 @@
+{
+  "prefix_suffix_pairs_checked": 14904,
+  "windows": 6,
+  "settings_per_window": 11,
+  "rows": 66,
+  "figure_1_draw_plan": [
+    {
+      "native_first": "a",
+      "selected": "b",
+      "full_reads": 16,
+      "bounded_reads": 16
+    },
+    {
+      "native_first": "b",
+      "selected": "b",
+      "full_reads": 16,
+      "bounded_reads": 12
+    }
+  ]
+}

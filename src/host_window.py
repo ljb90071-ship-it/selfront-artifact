@@ -1,11 +1,12 @@
 """Read-only selection interface for a host-owned frontier and expansion loop."""
 import math
-from selfront import probe
+from selfront import choose_window
 
 
 def choose_expansion(frontier, adjacency, discovered, eligible, rng, cfg,
                      *, host_stopped=False, expansion_bound=math.inf,
-                     enabled=True, completed_steps=0):
+                     enabled=True, completed_steps=0, probe_checkpoints=(),
+                     reuse_probe_positions=False):
     """frontier: (nonnegative native key, ID) pairs; return ID and probe count.
 
     Caller evaluates the host stopping predicate before this call and supplies
@@ -29,9 +30,7 @@ def choose_expansion(frontier, adjacency, discovered, eligible, rng, cfg,
     window = [(p, v) for p, v in ordered[:cfg.w] if p <= cap]
     if len(window) < 2:
         return native, 0
-    scored, reads = [], 0
-    for p, v in window:
-        _, _, score, n = probe(adjacency[v], discovered, eligible, rng, cfg)
-        scored.append((-score, p, v))
-        reads += n
-    return min(scored)[2], reads
+    (_, vertex), reads, _, _ = choose_window(
+        window, adjacency, discovered, eligible, rng, cfg, probe_checkpoints,
+        reuse_positions=reuse_probe_positions)
+    return vertex, reads

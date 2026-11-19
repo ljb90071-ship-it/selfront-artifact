@@ -1,4 +1,5 @@
 """Readable bottom-layer SelFront reference operator; Python standard library only."""
+from collections import Counter
 from dataclasses import dataclass
 import heapq
 import math
@@ -37,20 +38,87 @@ def squared_distance(x, q):
 
 def probe(neighbors, discovered, eligible, rng, cfg):
     """Return (Uhat,Yhat,score,metadata_reads), without modifying query state."""
+    counts, reads, _ = _read_probe(neighbors, discovered, eligible, rng, cfg)
+    return (*counts, reads)
+
+
+def _read_probe(neighbors, discovered, eligible, rng, cfg,
+                incumbent=None, checkpoints=(), reuse_positions=False):
+    """Return counts and score, or None when the unread tail cannot win."""
     d = len(neighbors)
     if not d:
-        return 0.0, 0.0, 0.0, 0
-    positions = range(d) if d <= cfg.s else (rng.randrange(d) for _ in range(cfg.s))
-    unseen = useful = reads = 0
-    for i in positions:
+        return (0.0, 0.0, 0.0), 0, 0
+    budget = min(d, cfg.s)
+    replacement = d > cfg.s
+    positions = ((rng.randrange(d) for _ in range(budget))
+                 if replacement else iter(range(d)))
+    grouped = reuse_positions and replacement
+    # Read repeated positions once, multiplying their contribution by the
+    # number of draws. Counter preserves the order of first occurrence.
+    weighted = Counter(positions).items() if grouped else ((i, 1) for i in positions)
+    scale = d / budget
+    base = cfg.c + cfg.a * d
+    unseen = useful = checks = observed = 0
+    for reads, (i, weight) in enumerate(weighted, start=1):
         v = neighbors[i]
         fresh, accepted = v not in discovered, v in eligible
-        unseen += fresh
-        useful += fresh and accepted
-        reads += 1
-    scale = d / reads
-    u, y = unseen*scale, useful*scale
-    return u, y, y/(cfg.c + cfg.a*d + cfg.b*u), reads
+        unseen += weight * fresh
+        useful += weight * (fresh and accepted)
+        previous = observed
+        observed += weight
+        if (incumbent is not None and observed < budget
+                and any(previous < checkpoint <= observed for checkpoint in checkpoints)):
+            checks += 1
+            remaining = budget - observed
+            max_useful = (useful + remaining) * scale
+            matching_unseen = (unseen + remaining) * scale
+            upper_score = max_useful / (base + cfg.b * matching_unseen)
+            if upper_score <= incumbent:
+                # Each discarded draw still advances the shared RNG. No ID or
+                # state is read, and exact scans have no random tail to consume.
+                if replacement and not grouped:
+                    for _ in positions:
+                        pass
+                return None, reads, checks
+    u, y = unseen * scale, useful * scale
+    return (u, y, y / (base + cfg.b * u)), reads, checks
+
+
+def choose_window(window, adjacency, discovered, eligible, rng, cfg,
+                  checkpoints=(), *, trace=False, reuse_positions=False):
+    """Score a nonempty window in increasing (native key, ID) order.
+
+    At a checkpoint a later candidate with upper score <= the best completed
+    score cannot win, because a tie keeps the earlier candidate.
+    """
+    # Under these bounds all products and sums before the final division are
+    # exactly representable. The rounded division preserves their order.
+    # Other cost profiles or budgets use the full scoring path.
+    binary_exact = (checkpoints and cfg.s <= 65536 and (cfg.s & (cfg.s - 1)) == 0
+                    and all(0 <= x <= 65536 and x == int(x)
+                            for x in (cfg.a, cfg.b, cfg.c)))
+    best = window[0]
+    best_score = -1
+    reads = checks = 0
+    scores = []
+    for rank, (key, vertex) in enumerate(window):
+        neighbors = adjacency[vertex]
+        cutoff = best_score if binary_exact and rank and len(neighbors) <= 65536 else None
+        counts, read_count, check_count = _read_probe(
+            neighbors, discovered, eligible, rng, cfg, cutoff, checkpoints, reuse_positions)
+        reads += read_count
+        checks += check_count
+        if counts is None:
+            if trace:
+                scores.append(dict(id=vertex, distance=key, pruned_after=read_count))
+            continue
+        u, y, score = counts
+        if trace:
+            scores.append(dict(id=vertex, distance=key, u=u, y=y, score=score))
+        if score > best_score:
+            best = (key, vertex)
+            best_score = score
+    return best, reads, checks, scores
 
 
 def route(n, eligible_count, k, pilot_eligible=None, beta=4.0):
@@ -71,7 +139,8 @@ def route(n, eligible_count, k, pilot_eligible=None, beta=4.0):
 
 
 def search(vectors, adjacency, eligible, query, entry, k=10, ef=256,
-           seed=0, scheduler=True, cfg=Config(), trace=False):
+           seed=0, scheduler=True, cfg=Config(), trace=False, *,
+           probe_checkpoints=(), reuse_probe_positions=False):
     """Run one fresh graph invocation, then exact cardinality fallback if needed.
 
     IDs are contiguous integers. C is a min heap; W and R are bounded max heaps.
@@ -95,6 +164,8 @@ def search(vectors, adjacency, eligible, query, entry, k=10, ef=256,
     results = [(-d0, -entry)] if entry in eligible else []
     counters = dict(expansions=0, graph_distances=1, adjacency_reads=0,
                     probe_reads=0, fallback_distances=0, scheduled_steps=0)
+    if probe_checkpoints:
+        counters['probe_bound_checks'] = 0
     history = []
     enabled = False
     observed = duplicate = block_steps = 0
@@ -126,12 +197,12 @@ def search(vectors, adjacency, eligible, query, entry, k=10, ef=256,
             while candidates and len(window) < cfg.w and candidates[0][0] <= cap:
                 window.append(heapq.heappop(candidates))
             if len(window) > 1:
-                for dist, vertex in window:
-                    u, y, score, reads = probe(adjacency[vertex], discovered, eligible, rng, cfg)
-                    counters['probe_reads'] += reads
-                    scores.append(dict(id=vertex, distance=dist, u=u, y=y, score=score))
-                winner = min(scores, key=lambda r: (-r['score'], r['distance'], r['id']))
-                chosen = (winner['distance'], winner['id'])
+                chosen, reads, checks, scores = choose_window(
+                    window, adjacency, discovered, eligible, rng, cfg,
+                    probe_checkpoints, trace=trace, reuse_positions=reuse_probe_positions)
+                counters['probe_reads'] += reads
+                if probe_checkpoints:
+                    counters['probe_bound_checks'] += checks
                 counters['scheduled_steps'] += 1
             for candidate in window:
                 if candidate != chosen:

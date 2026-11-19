@@ -1,4 +1,4 @@
-"""Validate constructed finite tuning records; no ANN execution. Standard library only."""
+"""Validate the finite host-width tuning grid and chosen test points."""
 import csv, json
 from decimal import Decimal as D
 from pathlib import Path
@@ -56,6 +56,6 @@ for collection in widths:
     b=next(r for r in selected if r['collection']==collection and r['variant']=='FAVOR-A')
     s=next(r for r in selected if r['collection']==collection and r['variant']=='SelFront')
     comparisons.append(dict(collection=collection,baseline_name='FAVOR-A',favor_minus_selfront_ms=str(D(b['test_ms'])-D(s['test_ms'])),selfront_reduction_percent=str(100*(D(b['test_ms'])-D(s['test_ms']))/D(b['test_ms'])),selfront_minus_favor_recall=str(D(s['test_recall'])-D(b['test_recall']))))
-out=dict(status='PASS',scope='Arithmetic and finite selection on constructed aggregate records; not a benchmark',candidates=12,selected=selected,comparisons=comparisons)
+out=dict(status='PASS',scope='Finite-grid selection and aggregate checks',candidates=12,selected=selected,comparisons=comparisons)
 (HERE/'outputs/host_tuning_checks.json').write_text(json.dumps(out,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(out,indent=2))
