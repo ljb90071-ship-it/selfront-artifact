@@ -6,7 +6,7 @@ Numbering follows the accompanying SelFront paper.
 |---|---|---|
 | Section 2: C/W/R/D and native bounds | [operator source](src/selfront.py), [operator guide](docs/operator.md) | Supplied graph traversal; bounded heaps; ineligible bridges; independent result admission |
 | Section 3: fresh probes, yield/cost, activation | [operator source](src/selfront.py), [configuration](configs/operator.json) | Read-only replacement probes, exact small lists, distance window, native period, occurrence gate |
-| Figure 1: remaining work and unread draws | [figure](figures/choice.pdf), [draw plan](experiments/probe_replay/figure1_draws.csv) | Trace the two candidates through scoring and the upper bound |
+| Figure 1: remaining work and unread draws | [figure](figures/choice.pdf), [draw plan](experiments/probe_replay/figure1_draws.csv) | Follow each observed draw to its indexed list slot and compare the two decision scores |
 | Section 4 and Figure 2 | [exact enumeration](scripts/exact_sampling.py), [probabilities](data/local_probabilities.json) | Recompute distribution means, bias checks, and pair-selection probabilities |
 | Table 1 | [collections](data/collections.csv) | Collection dimensions, counts and graph-route denominators |
 | Table 2 | [main results](data/main.csv), [archive analysis](scripts/analyze_archive.py) | Calculate graph/all-request relative reductions |
